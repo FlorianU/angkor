@@ -1,4 +1,5 @@
 <div class="h-100 w-100" style="text-align:center; margin: 0 0 0 0;">
+  <div id="bg-image"></div>
   <div id="header">
     <img class="pl-5 pt-4 float-left" src="assets/images/Logo.png"/>
     <h1 id="headerTitle">Welcome to Angkor</h1>
@@ -14,4 +15,4 @@
 <personal-mono-video id="video"></personal-mono-video>
 <personal-mono-footer id="footer"></personal-mono-footer>
 
-<button id="back-to-top" [style.opacity]="scrollBtnOpacity" class="btn btn-primary btn-circle back-to-top" role="button" title="Klicken Sie um wieder nach oben zu gelangen" data-toggle="tooltip" data-placement="left" [ngx-scroll-to]="'#header'">TOP</button>
+<button id="back-to-top" [style.opacity]="scrollBtnOpacity" class="btn btn-primary btn-circle back-to-top" role="button" title="Klicken Sie um wieder nach oben zu gelangen" data-toggle="tooltip" data-placement="left" [ngx-scroll-to]="'#header'" [inlineSVG]="'./assets/up.svg'"></button>

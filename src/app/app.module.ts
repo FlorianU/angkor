@@ -7,6 +7,8 @@ import { AppComponent } from './app.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { PicturesComponent } from './components/pictures/pictures.component';
 import { VideoComponent } from './components/video/video.component';
+import { InlineSVGModule } from 'ng-inline-svg';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -15,6 +17,8 @@ import { VideoComponent } from './components/video/video.component';
     PicturesComponent,
     FooterComponent],
   imports: [
+    HttpClientModule,
+    InlineSVGModule.forRoot(),
     ScrollToModule.forRoot(),
     BrowserModule,
     AppRoutingModule

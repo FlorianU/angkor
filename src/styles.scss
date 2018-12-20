@@ -1,24 +1,50 @@
 /* You can add global styles to this file, and also import other style files */
+$primary: #262d45;
+
+
+$color1: #262d45;
+$color2: #262d45;
+$color3: #262d45;
+$color4: #262d45;
+$color5: #60819c;
+
 @import "~bootstrap/scss/bootstrap";
 
 body, html {
     margin: 0 0 0 0;
     padding: 0 0 0 0;
+    background-color: $color5;
 }
 
 #header {
     img {
         height: 200px;
     }
-
-    background-image: url("assets/images/header-image.jpg");
     height: 400px;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
     margin: 0 0 0 0;
-    position: relative;
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 9999;
     font-family: "PT Serif Caption";
+}
+
+#bg-image {
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 1;
+
+    background-image: url("assets/images/IMG_20181210_093627_710.jpg");
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);
+    height: 400px;
+    background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center 30%;
 }
 
 #headerTitle {
@@ -27,12 +53,16 @@ body, html {
     margin-right: auto;
     left: 0;
     right: 0;
+    font-size: 80px;
     padding-top: 150px;
+    color:black;
+
 }
 
 .topNav {
     position: absolute;
     bottom: 0;
+    margin-top: auto;
     margin-left: auto;
     margin-right: auto;
     left: 0;
@@ -66,6 +96,15 @@ body, html {
     bottom: 20px;
     right: 20px;
     transition: opacity 0.3s ease 0s;
+    & svg{
+        top: 80%;
+        transform: translateY(-20%);
+        & path, & rect, & line, & polyline, & circle, & polygon, & ellipse {
+            stroke: white; 
+        }
+        height: 21px;
+        width: 21px;
+    }
 }
 
 .btn-circle {
