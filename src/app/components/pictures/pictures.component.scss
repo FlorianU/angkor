@@ -1,0 +1,43 @@
+
+#picture1 {
+    height: 500px;
+    width: 890px;
+    background-image: url("https://res.cloudinary.com/dejxodw8k/image/upload/v1545404929/1EDITED-min.jpg");
+    background-size:     cover;
+    background-repeat:   no-repeat;
+    background-position: center;
+    transition: background-image 0.5s;
+    
+    &:hover {
+        background-image: url("https://res.cloudinary.com/dejxodw8k/image/upload/v1545404808/1RAW.jpg");
+    }
+}
+
+#picture2 {
+    height: 500px;
+    width: 890px;
+    //background-image: url("https://i.ibb.co/KsM5tFX/Strasse-EDITED.jpg");
+    background-image: url("https://res.cloudinary.com/dejxodw8k/image/upload/v1545404823/StrasseEDITED2.jpg");
+    background-size:     cover;
+    background-repeat:   no-repeat;
+    background-position: center;
+    transition: background-image 0.5s;
+    
+    &:hover {
+        background-image: url("https://res.cloudinary.com/dejxodw8k/image/upload/v1545404822/StrasseRAW.jpg");
+    }
+}
+
+#picture3 {
+    height: calc(1000px + 0.25rem);
+    width: 600px;
+    background-image: url("https://res.cloudinary.com/dejxodw8k/image/upload/v1545404830/ProjektCambodiaGel%C3%A4nderBelichtet2.png");
+    background-size:     cover;
+    background-repeat:   no-repeat;
+    background-position: center 30%;
+    transition: background-image 0.5s;
+
+    &:hover {
+        background-image: url("https://res.cloudinary.com/dejxodw8k/image/upload/v1545404830/UrsprungGel%C3%A4nder.jpg");
+    }
+}

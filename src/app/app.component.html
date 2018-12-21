@@ -1,18 +1,34 @@
-<div class="h-100 w-100" style="text-align:center; margin: 0 0 0 0;">
-  <div id="bg-image"></div>
-  <div id="header">
-    <img class="pl-5 pt-4 float-left" src="assets/images/Logo.png"/>
-    <h1 id="headerTitle">Welcome to Angkor</h1>
+<div id="bg-image"></div>
+<div class="p-0 m-0" id="wrapper">
+
+  <div id="header" style="text-align:center">
+    <img class="pt-5 mt-5" src="assets/images/Logo.png" />
     <div class="topNav row justify-content-md-center">
-      <button type="button" class="btn col-2" [ngx-scroll-to]="'#pictures'">Bilder</button>
-      <button type="button" class="btn col-2" [ngx-scroll-to]="'#video'">Video</button>
-      <button type="button" class="btn col-2" [ngx-scroll-to]="'#footer'">Impressum</button>
+      <button type="button" class="btn col-lg-2 col-4" [ngx-scroll-to]="'#pictures'">Bilder</button>
+      <button type="button" class="btn col-lg-2 col-4" [ngx-scroll-to]="'#video'">Video</button>
+      <button type="button" class="btn col-lg-2 col-4" [ngx-scroll-to]="'#footer'">Impressum</button>
     </div>
   </div>
+
+  <div id="content">
+    <div class="textBlock">
+      <h2>Angkor World Heritage Site</h2>
+      <p>Angkor ist eine Region in Kambodscha, welche massgebend von der vergangenen Zivilisation der Khmer geprägt
+        ist.
+        Die Region bildete vor rund tausend
+        Jahren das Zentrum des Königreiches Kambuja. Auf einer
+        Fläche von mehr als 350 Quadratkilometer sind dort mehr als 1000 Heiligtümer und Tempelanlagen
+        im Dschungel zu finden. Der berühmteste dieser Tempel Angkor Wat ist seit jeher der grösste Tempelkomplex der
+        Welt.
+        Eindrücke dieser Tempelanlagen werde ich in meinem ePortfolio mit Bildern
+        beschreiben.</p>
+    </div>
+    <personal-mono-pictures id="pictures"></personal-mono-pictures>
+    <personal-mono-video id="video"></personal-mono-video>
+  </div>
+
+  <personal-mono-footer id="footer"></personal-mono-footer>
+  <button id="back-to-top" [style.opacity]="scrollBtnOpacity" class="btn btn-primary btn-circle back-to-top" role="button"
+    title="Klicken Sie um wieder nach oben zu gelangen" data-toggle="tooltip" data-placement="left" [ngx-scroll-to]="'#header'"
+    [inlineSVG]="'./assets/up.svg'"></button>
 </div>
-
-<personal-mono-pictures id="pictures"></personal-mono-pictures>
-<personal-mono-video id="video"></personal-mono-video>
-<personal-mono-footer id="footer"></personal-mono-footer>
-
-<button id="back-to-top" [style.opacity]="scrollBtnOpacity" class="btn btn-primary btn-circle back-to-top" role="button" title="Klicken Sie um wieder nach oben zu gelangen" data-toggle="tooltip" data-placement="left" [ngx-scroll-to]="'#header'" [inlineSVG]="'./assets/up.svg'"></button>

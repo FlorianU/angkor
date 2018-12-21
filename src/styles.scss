@@ -2,10 +2,10 @@
 $primary: #262d45;
 
 
-$color1: #262d45;
-$color2: #262d45;
+$color1: #62733c;
+$color2: #8db731;
 $color3: #262d45;
-$color4: #262d45;
+$color4: #c7754f;
 $color5: #60819c;
 
 @import "~bootstrap/scss/bootstrap";
@@ -13,16 +13,36 @@ $color5: #60819c;
 body, html {
     margin: 0 0 0 0;
     padding: 0 0 0 0;
-    background-color: $color5;
+    overflow-x: hidden;
+}
+
+#content {
+    margin: 90px 200px 90px 200px;
+}
+
+@media only screen and (max-width: 1200px) {
+    #content { 
+        margin: 90px 10px 90px 10px;
+    }
+    .textBlock {
+        margin: 0 0 0 0;
+        width: 100%;
+    }
+  }
+
+.textBlock {
+    margin: 0 180px 100px 10px;
+    padding-left: 20px;
+    border-left:5px solid #000000;
 }
 
 #header {
+    position: relative;
     img {
         height: 200px;
     }
     height: 400px;
     margin: 0 0 0 0;
-    position: absolute;
     left: 0;
     right: 0;
     z-index: 9999;
@@ -33,7 +53,6 @@ body, html {
     position: absolute;
     left: 0;
     right: 0;
-    z-index: 1;
 
     background-image: url("assets/images/IMG_20181210_093627_710.jpg");
     -webkit-filter: blur(5px);
